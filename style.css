@@ -1,0 +1,140 @@
+/*  GLOBAL  */
+/*
+        Color Palette:
+        Background: #CFD8DC // light grey
+        Primary text: #212121 // dark grey
+        Primary color: #607D8B // grey blue
+        Primary color text: #FFFFFF //white
+        Accent color: #FF4081   //pink
+        Accent color text: #FFFFFF //white
+
+*/
+* {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*  Background color: Color palette Background  */
+body {
+    background-color: #CFD8DC;
+}
+
+/*  Accent color for button background    */
+button {
+    background-color: #FF4081;
+    color:#FFFFFF;
+}
+
+/*  Button text in uppercase    */
+button, h3 {
+    text-transform: uppercase;
+}
+
+/*  APP BAR */
+/*  Primary color for app bars  */
+h1 {
+    background-color: #607D8B;
+    color: #FFFFFF;
+}
+
+/*  CHANNELS LIST   */
+
+/*  Highlight the selected channel  */
+#channel-list .selected {
+    border-left: 4px solid #607D8B;
+    color: #607D8B;
+}
+
+/*  Adjust the channel list elements    */
+#channel-list li {
+    padding: 16px;
+    font-size: 16px;
+    height: 24px;
+    box-sizing: content-box;
+}
+
+/*  Thin line between channel list elements */
+#channel-list hr {
+    border: 0;
+    border-top: 1px solid #CFD8DC;
+}
+
+/*  Align the star on the same axis as the text */
+#channel-list img {
+    vertical-align: middle;
+}
+
+/*  TAB BAR */
+/*  Adjust the tab bar buttons: new, trending, favorites    */
+#tab-bar button{
+    text-align: center;
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 13px;
+    width: 33%;
+    height: 72px;
+    padding: 16px;
+    color: black;
+}
+
+/*  Image within the buttons    */
+#tab-bar img {
+    display: block;
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+/*  Highlight the selected tab bar button   */
+#tab-bar .selected {
+    border-bottom: 4px solid #607D8B;
+    color: #607D8B;
+}
+
+
+/*  MESSAGES    */
+
+/*  Generally adjust the message boxes  */
+.message {
+    width: 80%;
+    margin-bottom: 8px;
+    margin-left: 2.5%;
+}
+
+/*  Medium font size for metadata   */
+.message h3, .message h3 a {
+    font-size: medium;
+    color: black;
+}
+
+/*  Adjust the message text */
+.message p {
+    padding: 16px;
+    background-color: #FFFFFF;
+}
+
+/*  Highlight own messages  */
+.own {
+    margin-left: 17.5%;
+}
+
+/* #2 #font #locations need an extra element, we'll use strong for w3w locations */
+strong {
+    text-transform: uppercase;
+}
+
+/*  Larger font size for remaining message time, non italic */
+i {
+    font-size: larger;
+    font-style: normal;
+} 
+
+/*  No list icons for any lists (messages and channels)*/
+ul {
+    background-color: #FFFFFF;
+    list-style-type: none;
+}
+
+li {
+    background-color: #FFFFFF;
+}
